@@ -66,7 +66,7 @@ function juego_atajar(penales){
 }
 
 alert("Torneo de penales")
-let nombre = prompt("Nombre jugador").toLowerCase()
+let nombre = prompt("Nombre jugador")
 
 while (true) {
     let jugadorPateando = 0;
