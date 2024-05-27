@@ -12,8 +12,6 @@
 //      |           5           |
 //      |  3                  4 |
 
-
-
 function pedir_num(texto, minimo, maximo){
     let num = Number(prompt(texto))
     while (isNaN(num) || num < minimo || num > maximo){
@@ -67,7 +65,8 @@ function juego_atajar(penales){
 
 alert("Torneo de penales")
 let nombre = prompt("Nombre jugador")
-
+if (nombre !== null) {
+    nombre = nombre.toLowerCase();
 while (true) {
     let jugadorPateando = 0;
     let maquinaPateando = 0;
@@ -133,4 +132,7 @@ while (true) {
     if (confirm("Quieres salir del programa? \nAceptar para salir \nCancelar para volver a empezar")){
         break
     }
+}
+}else {
+    alert("Si cancelas, no jugas... \nAhora de castigo tenes que apretar f5 para volver a jugar,\ntoy chiquito y todavia no se como resolver esto.")
 }
